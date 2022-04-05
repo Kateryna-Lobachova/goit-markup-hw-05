@@ -125,7 +125,7 @@ header {
   height: 4px;
   bottom: -30px;
   left: 0;
-  background: #2196F3;
+  background: var(--accent-color);
   border-radius: 2px;
 }
 
