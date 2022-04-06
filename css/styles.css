@@ -148,6 +148,12 @@ header {
 .contact-list-link:hover,
 .contact-list-link:focus {
   color: var(--accent-color);
+}
+.nav-list-icon{
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-list-link:hover .nav-list-icon,
+.contact-list-link:focus .nav-list-icon{
   fill: var(--accent-color);
 }
 
@@ -455,7 +461,8 @@ fill: var(--accent-font-color);
 
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-   color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-li:not(:last-child) {
   margin-right: 8px;
@@ -483,6 +490,7 @@ fill: var(--accent-font-color);
 
 .filter-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-link:hover,
 .filter-link:focus {
